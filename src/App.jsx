@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Button from "@mui/material/Button";
 
 import "./App.css";
 
@@ -14,6 +15,7 @@ function App() {
             element={
               <div>
                 Navigate to <Link to="/example">example</Link>
+                <Button variant="contained">Hello world</Button>
               </div>
             }
           />
