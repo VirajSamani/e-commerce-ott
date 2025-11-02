@@ -2,23 +2,16 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 
 import "./App.css";
+import Layout from "./components/Layout/Layout";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <>
-      <div>Header</div>
+      <Layout />
       <BrowserRouter>
         <Routes>
-          <Route
-            path="/"
-            exact
-            element={
-              <div>
-                Navigate to <Link to="/example">example</Link>
-                <Button variant="contained">Hello world</Button>
-              </div>
-            }
-          />
+          <Route path="/" exact element={<Dashboard />} />
           <Route
             path="/example"
             exact
@@ -30,7 +23,6 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-      <div>Footer</div>
     </>
   );
 }
