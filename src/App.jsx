@@ -4,10 +4,11 @@ import Button from "@mui/material/Button";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
 import Dashboard from "./pages/Dashboard";
+import Container from "@mui/material/Container";
 
 function App() {
   return (
-    <>
+    <Container>
       <Layout />
       <BrowserRouter>
         <Routes>
@@ -23,7 +24,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-    </>
+    </Container>
   );
 }
 
