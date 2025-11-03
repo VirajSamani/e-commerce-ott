@@ -1,4 +1,7 @@
+import useGetPost from "../hooks/useGetPost";
+
 function Dashboard() {
+  useGetPost();
   return (
     <div>
       <br />
