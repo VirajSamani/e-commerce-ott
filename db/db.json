@@ -15,49 +15,49 @@
       "id": "1",
       "productName": "Wireless Mouse",
       "productDescription": "A sleek wireless mouse with ergonomic design and long battery life.",
-      "productImage": "https://example.com/images/wireless-mouse.jpg",
+      "productImage": "/mouse.jpg",
       "availableQuantity": "25"
     },
     {
       "id": "2",
       "productName": "Bluetooth Keyboard",
       "productDescription": "Compact Bluetooth keyboard compatible with multiple devices.",
-      "productImage": "https://example.com/images/bluetooth-keyboard.jpg",
+      "productImage": "/mouse.jpg",
       "availableQuantity": "40"
     },
     {
       "id": "3",
       "productName": "USB-C Hub",
       "productDescription": "Multi-port USB-C hub with HDMI, USB 3.0, and SD card reader.",
-      "productImage": "https://example.com/images/usb-c-hub.jpg",
+      "productImage": "/usb.jpg",
       "availableQuantity": "18"
     },
     {
       "id": "4",
       "productName": "Gaming Headset",
       "productDescription": "High-quality gaming headset with noise-cancelling microphone.",
-      "productImage": "https://example.com/images/gaming-headset.jpg",
+      "productImage": "/mobile.jpg",
       "availableQuantity": "30"
     },
     {
       "id": "5",
       "productName": "Portable SSD",
       "productDescription": "1TB portable SSD with fast read/write speeds and durable design.",
-      "productImage": "https://example.com/images/portable-ssd.jpg",
+      "productImage": "/usb.jpg",
       "availableQuantity": "12"
     },
     {
       "id": "6",
       "productName": "Smartwatch",
       "productDescription": "Feature-packed smartwatch with fitness tracking and heart rate monitor.",
-      "productImage": "https://example.com/images/smartwatch.jpg",
+      "productImage": "/usb.jpg",
       "availableQuantity": "22"
     },
     {
       "id": "7",
       "productName": "Wireless Charger",
       "productDescription": "Fast wireless charger compatible with all Qi-enabled devices.",
-      "productImage": "https://example.com/images/wireless-charger.jpg",
+      "productImage": "/usb.jpg",
       "availableQuantity": "35"
     }
   ]

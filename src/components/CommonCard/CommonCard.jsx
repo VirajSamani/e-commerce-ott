@@ -11,7 +11,7 @@ export default function CommonCard({ cartItem }) {
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={cartItem.productImage}
         title={cartItem.productName}
       />
       <CardContent>
