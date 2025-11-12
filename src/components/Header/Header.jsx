@@ -14,6 +14,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import Badge from "@mui/material/Badge";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
@@ -68,6 +71,16 @@ function Header(props) {
           >
             MUI
           </Typography>
+          <IconButton>
+            <Badge color="success" badgeContent={5}>
+              <FavoriteBorderIcon sx={{ color: "white" }} />
+            </Badge>
+          </IconButton>
+          <IconButton>
+            <Badge color="secondary" badgeContent={5}>
+              <ShoppingCartIcon sx={{ color: "white" }} />
+            </Badge>
+          </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: "#fff" }}>

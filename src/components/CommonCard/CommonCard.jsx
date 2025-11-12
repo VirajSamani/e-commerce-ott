@@ -5,6 +5,8 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import AddIcon from "@mui/icons-material/Add";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 export default function CommonCard({ cartItem }) {
   return (
@@ -23,8 +25,12 @@ export default function CommonCard({ cartItem }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small" variant="contained" startIcon={<AddIcon />}>
+          Add To Cart
+        </Button>
+        <Button size="small" variant="outlined" startIcon={<FavoriteBorderIcon />}>
+          Add To Wishlist
+        </Button>
       </CardActions>
     </Card>
   );
