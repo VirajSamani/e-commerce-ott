@@ -6,9 +6,11 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import AddIcon from "@mui/icons-material/Add";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import useGlobalContext from "../../store/hooks/useGlobalContext";
 
 export default function CommonCard({ cartItem }) {
+  const { increaseCart, increaseWishList } = useGlobalContext();
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -25,10 +27,20 @@ export default function CommonCard({ cartItem }) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" variant="contained" startIcon={<AddIcon />}>
+        <Button
+          size="small"
+          variant="contained"
+          startIcon={<AddIcon />}
+          onClick={increaseCart}
+        >
           Add To Cart
         </Button>
-        <Button size="small" variant="outlined" startIcon={<FavoriteBorderIcon />}>
+        <Button
+          size="small"
+          variant="outlined"
+          startIcon={<FavoriteBorderIcon />}
+          onClick={increaseWishList}
+        >
           Add To Wishlist
         </Button>
       </CardActions>

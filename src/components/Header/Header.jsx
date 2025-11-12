@@ -16,7 +16,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@mui/material/Badge";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import useGlobalContext from "../../store/hooks/useGlobalContext";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Contact"];
@@ -24,6 +25,7 @@ const navItems = ["Home", "About", "Contact"];
 function Header(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const { cartCount, wishListCount } = useGlobalContext();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -72,12 +74,12 @@ function Header(props) {
             MUI
           </Typography>
           <IconButton>
-            <Badge color="success" badgeContent={5}>
+            <Badge color="success" badgeContent={wishListCount}>
               <FavoriteBorderIcon sx={{ color: "white" }} />
             </Badge>
           </IconButton>
           <IconButton>
-            <Badge color="secondary" badgeContent={5}>
+            <Badge color="secondary" badgeContent={cartCount}>
               <ShoppingCartIcon sx={{ color: "white" }} />
             </Badge>
           </IconButton>
